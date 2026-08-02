@@ -495,11 +495,49 @@
     line-height: 1.6;
   }
 
-  /* ── TESTIMONIALS ── */
-  .testimonials-section {
+  /* ── LIFESTYLE ── */
+  .lifestyle-section {
     padding: 70px 0;
     border-top: 1px solid var(--gray-300);
   }
+
+  .lifestyle-content {
+    display: block;
+    margin-top: 48px;
+  }
+
+  .lifestyle-text p {
+    font-size: 1.06rem;
+    color: var(--gray-700);
+    line-height: 1.85;
+    margin-bottom: 22px;
+    font-weight: 300;
+  }
+
+  .lifestyle-text p strong {
+    color: var(--navy);
+    font-weight: 600;
+  }
+
+  .location-address {
+    font-size: 0.85rem;
+    color: var(--gray-500);
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .location-schedule-link {
+    display: inline-block;
+    background: var(--teal);
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .location-schedule-link:hover { background: var(--teal-light); transform: translateY(-1px); }
 
   .testimonials-badge {
     display: inline-flex;
@@ -869,6 +907,7 @@
     .main { padding: 0 32px; }
     .bio-section { grid-template-columns: 1fr; gap: 40px; }
     .specialty-grid { grid-template-columns: 1fr 1fr; }
+    .lifestyle-content { grid-template-columns: 1fr; gap: 40px; }
     .testimonials-grid { grid-template-columns: 1fr; }
     .pub-grid { grid-template-columns: 1fr; }
     .locations-grid { grid-template-columns: 1fr; }
@@ -917,7 +956,7 @@
 
   <div class="hero-right">
     <div class="photo-frame">
-      <img src="https://coloradoent.com/wp-content/uploads/keller-bio-page-photo.jpg" alt="Dr. Robert G. Keller, MD" />
+      <img src="data:image/jpeg;base64,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" alt="Dr. Robert G. Keller, MD" />
     </div>
   </div>
 </section>
@@ -1084,6 +1123,34 @@
   </section>
 </div>
 
+<!-- ═══ LIFESTYLE ═══ -->
+<div class="main">
+  <section class="lifestyle-section">
+    <div class="reveal">
+      <div class="section-label">Beyond the Clinic</div>
+      <h2 class="section-heading">A Life of Adventure &amp;<br>Physical Challenge</h2>
+    </div>
+
+    <div class="lifestyle-content">
+      <div class="lifestyle-text reveal">
+        <p>
+          Outside the clinic, Dr. Keller is equally passionate about athletics and family. He shares his love of Colorado's natural landscape with his wife and two young sons, prioritizing outdoor adventures that keep the family active and connected—whether hiking mountain trails, camping under the stars, or skiing the slopes in winter.
+        </p>
+
+        <p>
+          As a dedicated endurance athlete, Dr. Keller regularly competes in triathlons and Ironman events, and has summited many of Colorado's famous 14,000-foot peaks (the "14ers"). This commitment to physical challenge mirrors his approach to medicine: <strong>disciplined, goal-oriented, and rooted in the belief that consistent dedication yields transformative results.</strong>
+        </p>
+
+        <p>
+          For Dr. Keller, staying active isn't just about personal fitness—it's about modeling a balanced, healthy lifestyle and deeply understanding the physical resilience his patients aspire to maintain in their own lives.
+        </p>
+      </div>
+
+
+    </div>
+  </section>
+</div>
+
 <!-- ═══ TESTIMONIALS ═══ -->
 <div class="main">
   <section class="testimonials-section">
@@ -1209,17 +1276,20 @@
       <div class="location-card">
         <div class="location-tag">Main Campus</div>
         <div class="location-name">Audubon Medical Campus</div>
-        <div class="location-address">3030 N Circle Drive, Suite 300<br>Colorado Springs, CO 80909<br><br><strong style="color:var(--teal)">(719) 867-7800</strong></div>
+        <div class="location-address">3030 N Circle Drive, Suite 300<br>Colorado Springs, CO 80909<br>(719) 867-7800</div>
+        <a href="https://coloradoent.com/appointments/" class="location-schedule-link">Schedule Appointment</a>
       </div>
       <div class="location-card">
         <div class="location-tag">Northeast Colorado Springs</div>
         <div class="location-name">St. Peregrine Pavilion</div>
-        <div class="location-address">Northeast Colorado Springs<br>Colorado Springs, CO<br><br><strong style="color:var(--teal)">(719) 867-7800</strong></div>
+        <div class="location-address">Northeast Colorado Springs<br>Colorado Springs, CO<br>(719) 867-7800</div>
+        <a href="https://coloradoent.com/appointments/" class="location-schedule-link">Schedule Appointment</a>
       </div>
       <div class="location-card">
         <div class="location-tag">Pueblo</div>
         <div class="location-name">Park West Business Campus</div>
-        <div class="location-address">Pueblo, CO<br><br><br><strong style="color:var(--teal)">(719) 867-7800</strong></div>
+        <div class="location-address">1900 Spaulding Avenue<br>Pueblo, CO 81001<br>(719) 867-7800</div>
+        <a href="https://coloradoent.com/appointments/" class="location-schedule-link">Schedule Appointment</a>
       </div>
     </div>
   </section>
